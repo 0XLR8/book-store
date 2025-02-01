@@ -1,0 +1,151 @@
+body{
+    background-color: #e7e7e7;
+}
+
+h1, h2, h3, p, a {
+    margin: 0px;
+    text-decoration: none;
+    color: #000000;
+}
+
+input, button {
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    background-color: transparent;
+}
+
+// Navigation
+.navigation {
+    border-bottom: 1px solid #c4c4c4;
+
+    img {
+        width: 100px;
+    }
+
+    a {
+        font-size: 18px;
+        font-weight: 600;
+
+    }
+
+    .cart-btn {
+        font-size: 20px;
+    }
+}
+
+// Cart
+.cart-container {
+    position: relative;
+    white-space: nowrap;
+
+    .cart-expanded {
+        border-radius: 10px;
+        overflow-y: scroll;
+        background-color: #e0e0e0;
+        position: absolute;
+        width: 0px;
+        min-height: 100px;
+        max-height: 500px;
+        box-shadow: 0px 0px 5px #ababab;
+        top: 0px;
+        right: 0px;
+        padding: 0px;
+        opacity: 0;
+        transition: 0.15s ease-in-out;
+        overflow: auto;
+        -ms-overflow-style: none;  
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;  
+        }
+    }
+
+    .active {
+        padding: 10px 20px 0px;
+        width: 300px;
+        opacity: 1;
+    }
+
+    .cart-item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #cecbcb;
+
+        img {
+            width: 80px;
+        }
+
+        .title {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .author {
+            font-size: 14px;
+            font-style: italic;
+        }
+    }
+
+    .cart-footer {
+        padding: 15px;
+        background-color: #e0e0e0;
+        position: sticky;
+        bottom: 0;
+        text-align: center;
+
+        .submit-btn {
+            background-color: #2bec42;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 5px 20px;
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+}
+
+// Books Page
+.books {
+
+    .search-bar {
+        max-width: 500px;
+        box-shadow: 0px 0px 7px #878787;
+        border-radius: 15px;
+        
+        input {
+            width: 100%;
+        }
+    }
+    
+    .book-item {
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px #c7c7c7;
+    
+        img {
+            width: 100px;
+            height: 130px;
+            object-fit: cover;
+        }
+
+        .title {
+            font-weight: 600;
+        }
+
+        .author {
+            font-style: italic;
+        }
+
+        .add-btn {
+            font-weight: 600;
+            padding: 5px 20px;
+            border-radius: 10px;
+            background-color: #ffcd69;
+        }
+    }
+}
