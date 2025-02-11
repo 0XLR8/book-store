@@ -9,4 +9,4 @@ Components:
   Context Providers: Handles state for cart contents
   Routing Components: Book page, Profile page
 
-N/A: Profile page, Better responsive design, Unit testing, Limited stock quantity logic, Better cart handling logic.
+N/A: Limited stock quantity logic.
