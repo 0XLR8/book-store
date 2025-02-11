@@ -1,4 +1,6 @@
-export const booksMock = [
+import { TypeBook } from "../types/types";
+
+export const booksMock: TypeBook[] = [
     {
       id: 1,
       title: "To Kill a Mockingbird",

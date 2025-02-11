@@ -7,3 +7,10 @@ export type TypeBook = {
 }
 
 export type TypeCartItem = TypeBook & { count: number };
+
+export type TypeUser = {
+    firstName: string;
+    lastName: string;
+    email: string;
+    dateOfBirth?: string;
+}
